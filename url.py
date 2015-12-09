@@ -7,8 +7,10 @@ sys.setdefaultencoding('utf-8')
 
 from handler.index import IndexHandler
 from handler.similar_movies import SimilarMoviesHandler
+from handler.special_day import SpecialDayHandler
 
 url = [
     (r'/', IndexHandler),
-    (r'/similar_movies/(\w+)/(\d+)', SimilarMoviesHandler)
+    (r'/similar_movies/(\w+)/(\d+)', SimilarMoviesHandler),
+    (r'/special_day/(\w+)', SpecialDayHandler)
 ]
