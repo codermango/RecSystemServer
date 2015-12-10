@@ -8,7 +8,19 @@ sys.setdefaultencoding('utf-8')
 
 class SpecialDayHandler(tornado.web.RequestHandler):
 
-    def get(self, day):
+    def __get_holiday_keyword_dict(self, date):
+        holiday_keyword_dict = {}
+        with open('/home/mark/Projects/Docker/RecSystemServer/data/holiday_keywords.txt') as holiday_keywords_file:
+            for line in holiday_keywords_file:
+                date_line = line[:8].strip()
+                if date_line == date:
+                    keywords = line[8:].strip().lower()
+                    if ' ' in keywords:
+                        continue
+                    return keywords
+
+
+    def get(self, date):
         self.set_header("Content-Type", "application/json")
         self.set_header("Access-Control-Allow-Origin", "*")
         self.set_header("Access-Control-Allow-Methods", "GET")
@@ -17,17 +29,24 @@ class SpecialDayHandler(tornado.web.RequestHandler):
         db = client.vionlabs
         col = db.tmdb_content
 
-        if day == "0911":
-            keyword = 'terror'
-        elif day == '1210':
-            keyword = 'nobel prize'
-        elif day == '0204':
-            keyword = 'cancer'
+        keyword = self.__get_holiday_keyword_dict(date)
+
+        # if day == "20150911":
+        #     keyword = 'terror'
+        # elif day == '20151210':
+        #     keyword = 'nobel prize'
+        # elif day == '20150204':
+        #     keyword = 'cancer'
 
         docs = col.find({'tmdbKeyword.name': {'$exists': 'true', '$in': [keyword]}}, {'imdbID': 1, '_id': 0})
 
         result_dict = {}
+        movieid_list = []
         for doc in docs:
-            result_dict[doc['imdbID']] = doc['imdbID']
+            movieid_list.append(doc['imdbID'])
+
+        result_dict['specday_movies'] = movieid_list
+        result_dict['day_keyword'] = keyword
+        client.close()
 
         self.write(result_dict)

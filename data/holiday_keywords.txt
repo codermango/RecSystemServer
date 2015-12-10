@@ -1,0 +1,153 @@
+20150127 Holocaust
+20150204 Cancer
+20150206 Female Genital Mutilation
+20150213 Radio
+20150220 Social Justice
+20150221 Mother Language
+20150301 Discrimination
+20150301 Self-injury
+20150303 Wildlife
+20150308 Women
+20150320 Happiness
+20150322 Water
+20150323 Meteorology
+20150324 Tuberculosis
+20150324 Human Rights
+20150402 Autism
+20150321 Racial Discrimination
+20150321 Poetry
+20150321 Nowruz
+20150321 Down Syndrome
+20150321 Forests
+20150325 Slave
+20150325 Solidarity with Detained and Missing Staff Members
+20150404 Mine
+20150406 Sport for Development and Peace
+20150407 Health
+20150407 Rwanda Genocide
+20150412 Space Flight
+20150420 Chinese Language
+20150423 Book and Copyright
+20150423 English Language
+20150425 Malaria
+20150426 Property
+20150428 Safety and Health at Work
+20150429 Chemical Warfare
+20150430 Jazz
+20150503 Press Freedom
+20150509 Migratory Bird
+20150515 Families
+20150517 Information Society
+20150521 Cultural Diversity
+20150522 Biological Diversity
+20150523 Obstetric Fistula
+20150529 Peacekeepers
+20150531 Tobacco
+20150601 Parents
+20150601 Vesak
+20150604 Children Victims of Aggression
+20150605 Environment
+20150608 Oceans
+20150612 Child Labour
+20150614 Blood Donor
+20150615 Elder Abuse
+20150617 Desertification and Drought
+20150620 Refugee
+20150623 Public Service
+20150623 Widows
+20150625 Seafarer
+20150626 Drug Abuse and Illicit Trafficking
+20150626 Torture
+20150704 Cooperative
+20150711 Population
+20150718 Nelson Mandela
+20150728 Hepatitis
+20150730 Friendship
+20150809 Indigenous People
+20150812 Youth
+20150819 Humanitarian
+20150823 Slave Trade
+20150829 Nuclear Test
+20150830 Disappearances
+20150905 Charity
+20150908 Literacy
+20150910 Suicide
+20150912 South-South Cooperation
+20150915 Democracy
+20150916 Ozone Layer
+20150921 Peace
+20150924 Maritime
+20150927 Tourism
+20150312 Kidney
+20150520 Autoimmune Arthritis
+20150926 Trafficking Person
+20150926 Nuclear Weapon
+20150928 Rabies
+20150929 Heart
+20151001 Older Persons
+20151001 Vegetarian
+20151002 Non-Violence
+20151005 Teachers
+20151005 Habitat
+20151008 Sight
+20151009 Post
+20151010 Mental Health
+20151011 Girl Child
+20151014 Natural Disaster
+20151015 Rural Women
+20151016 Food
+20151017 Poverty
+20151024 United Nations
+20151024 Development Information
+20151027 Audiovisual Heritage
+20151102 Crimes against Journalist
+20151106 Preventing the Exploitation of the Environment in War and Armed Conflict
+20151110 Science Day for Peace and Development
+20151112 Pneumonia
+20151114 Diabetes
+20151115 Road Traffic Victims
+20151116 Tolerance
+20151119 Philosophy
+20151119 Toilet
+20151119 Men
+20151120 Children
+20151120 Africa Industrialization
+20151121 Television
+20151125 Violence against Women
+20151129 Palestinian
+20151201 AIDS
+20151202 Slavery
+20151203 Disability
+20151205 Economic and Social
+20151205 Soil
+20151207 Civil Aviation
+20151209 Anti-Corruption
+20151210 Human Rights
+20151211 Mountain
+20151218 Migrant
+20151218 Arabic Language
+20151220 Human Solidarity
+20150104 Braille
+20150107 Programmer
+20150118 Religion
+20150125 Leprosy
+20150126 Customs
+20150202 Wetlands
+20150211 Sickness
+20150328 Earth Hour
+20150401 Fool
+20150417 Youth Service
+20150418 Monuments and Sites
+20150422 Earth Day
+20150508 Second World War
+20150508 Ovarian Cancer
+20150525 African Liberation
+20150831 Overdose
+20150904 Sexual Health
+20150913 Programmer
+20150923 Bisexuality
+20151007 Cerebral Palsy
+20151029 Stroke
+20151101 Vegan
+20151117 Prematurity
+20151210 Nobel

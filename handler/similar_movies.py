@@ -5,7 +5,6 @@ sys.path.append('/home/mark/Projects/Docker/vionel-recommender/cb_recommender/')
 import tornado.web
 from cb_recommender.recommender import SimilarityRecommender
 
-import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
