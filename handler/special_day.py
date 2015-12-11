@@ -6,6 +6,12 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+
+DB_HOST = '192.168.1.87'
+DB_PORT = 27017
+DB_NAME = 'vionlabs'
+DB_COLLECTION = 'tmdb_content'
+
 class SpecialDayHandler(tornado.web.RequestHandler):
 
     def __get_holiday_keyword_dict(self, date):
@@ -25,18 +31,11 @@ class SpecialDayHandler(tornado.web.RequestHandler):
         self.set_header("Access-Control-Allow-Origin", "*")
         self.set_header("Access-Control-Allow-Methods", "GET")
 
-        client = MongoClient('192.168.1.87')
-        db = client.vionlabs
-        col = db.tmdb_content
+        client = MongoClient(DB_HOST)
+        db = client[DB_NAME]
+        col = db[DB_COLLECTION]
 
         keyword = self.__get_holiday_keyword_dict(date)
-
-        # if day == "20150911":
-        #     keyword = 'terror'
-        # elif day == '20151210':
-        #     keyword = 'nobel prize'
-        # elif day == '20150204':
-        #     keyword = 'cancer'
 
         docs = col.find({'tmdbKeyword.name': {'$exists': 'true', '$in': [keyword]}}, {'imdbID': 1, '_id': 0})
 

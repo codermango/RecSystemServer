@@ -6,17 +6,22 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-class HolidayKeywordHandler(tornado.web.RequestHandler):
 
+DB_HOST = '192.168.1.87'
+DB_PORT = 27017
+DB_NAME = 'vionlabs'
+DB_COLLECTION = 'tmdb_content'
+
+class HolidayKeywordHandler(tornado.web.RequestHandler):
 
     def get(self):
         self.set_header("Content-Type", "application/json")
         self.set_header("Access-Control-Allow-Origin", "*")
         self.set_header("Access-Control-Allow-Methods", "GET")
 
-        client = MongoClient('192.168.1.87')
-        db = client.vionlabs
-        col = db.tmdb_content
+        client = MongoClient(DB_HOST)
+        db = client[DB_NAME]
+        col = db[DB_COLLECTION]
 
         holiday_keyword_dict = {}
         with open('/home/mark/Projects/Docker/RecSystemServer/data/holiday_keywords.txt') as holiday_keywords_file:
