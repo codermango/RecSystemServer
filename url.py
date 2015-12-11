@@ -11,8 +11,8 @@ from handler.special_day import SpecialDayHandler
 from handler.holiday_keyword import HolidayKeywordHandler
 
 url = [
-    (r'/all_movies', AllMoviesHandler),
-    (r'/similar_movies/(\w+)/(\d+)', SimilarMoviesHandler),
-    (r'/special_day/(\w+)', SpecialDayHandler),
-    (r'/holiday_keyword', HolidayKeywordHandler)
+    (r'/all_movies/', AllMoviesHandler),
+    (r'/similar_movies/(\w+)/(\d+)/', SimilarMoviesHandler),
+    (r'/special_day/(\w+)/', SpecialDayHandler),
+    (r'/holiday_keyword/', HolidayKeywordHandler)
 ]
