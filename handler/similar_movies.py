@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #coding:utf-8
 import sys
-sys.path.append('/Users/Mark/Projects/work/vionel-recommendations/')
+sys.path.append('/home/mark/Projects/Docker/vionel-recommender/')
 import tornado.web
 from cb_recommender.recommender import SimilarityRecommender
 

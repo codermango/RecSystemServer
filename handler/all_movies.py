@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 #coding:utf-8
 import sys
-sys.path.append('/Users/Mark/Projects/work/vionel-recommendations/')
 import tornado.web
 from pymongo import MongoClient
 
