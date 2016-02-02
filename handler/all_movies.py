@@ -8,7 +8,7 @@ from pymongo import MongoClient
 DB_HOST = 'localhost'
 DB_PORT = 27017
 DB_NAME = 'VionelDB'
-DB_COLLECTION = 'BoxerMovies'
+DB_COLLECTION = 'Plejmo'
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -23,13 +23,13 @@ class AllMoviesHandler(tornado.web.RequestHandler):
         db = client[DB_NAME]
         col = db[DB_COLLECTION]
 
-        docs = col.find({}, {'imdbId': 1, '_id': 0})
+        docs = col.find({}, {'imdbID': 1, '_id': 0})
         result_dict = {}
         movieid_list = []
         for doc in docs:
-            movieid_list.append(doc['imdbId'])
+            movieid_list.append(doc['imdbID'])
 
-        result_dict['all_movies'] = movieid_list
+        result_dict['all_movies'] = list(set(movieid_list))
         client.close()
 
         self.write(result_dict)

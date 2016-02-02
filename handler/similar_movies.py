@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #coding:utf-8
 import sys
-sys.path.append('/home/mark/Projects/Docker/vionel-recommender/')
+sys.path.append('/home/mark/Projects/work/vionel-recommender/')
 import tornado.web
 from cb_recommender.recommender import SimilarityRecommender
 
@@ -12,7 +12,7 @@ sys.setdefaultencoding('utf-8')
 DB_HOST = 'localhost'
 DB_PORT = 27017
 DB_NAME = 'VionelDB'
-DB_COLLECTION = 'BoxerMovies'
+DB_COLLECTION = 'Plejmo'
 
 class SimilarMoviesHandler(tornado.web.RequestHandler):
     def get(self, movieid, recnum):
